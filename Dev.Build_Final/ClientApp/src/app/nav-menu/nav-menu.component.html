@@ -1,0 +1,125 @@
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<div class='b'></div>
+<header>
+  <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-white bg-transparent mb-3">
+    <div class="container">
+      <a style="color:ghostwhite;" class="navbar-brand" [routerLink]="['/']">.:Santa's Little Helper:.</a>
+      <app-countdown></app-countdown>
+      <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse"
+           [ngClass]="{ show: isExpanded }">
+        <ul class="navbar-nav flex-grow">
+          <li class="nav-item"
+              [routerLinkActive]="['link-active']"
+              [routerLinkActiveOptions]="{ exact: true }">
+            <a class="nav-link text-light" style="background-color:transparent;"  [routerLink]="['/book', {outlets: {'people': ['people'], 'gifts': ['0']}}]">Holiday List</a>
+            <!--<a class="nav-link text-dark" [routerLink]="['/book']">Holiday List</a>-->
+          </li>
+          <li class="nav-item" [routerLinkActive]="['link-active']">
+            <a class="nav-link text-light" [routerLink]="['/decorations']">Decorations</a>
+          </li>
+          <li class="nav-item" [routerLinkActive]="['link-active']">
+            <a class="nav-link text-light" [routerLink]="['/party']">Party</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
