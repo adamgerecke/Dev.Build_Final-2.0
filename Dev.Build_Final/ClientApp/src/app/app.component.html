@@ -12,7 +12,7 @@
 <body *ngIf="cookieSet">
   <app-nav-menu></app-nav-menu>
   <div class="container">
-    <img src="../assets/treeTransparent.png" style="width: 200px; height: 200px;   position:absolute; left:50px;" />
+    
     <a style="color:ghostwhite; font-size:26px; font-family: 'Roboto', sans-serif;">Welcome, {{loggedInUser?.login}}</a><span><app-completed></app-completed></span>
     <h6 style="color:ghostwhite">Not you? <button (click)="clearCookie()" class="pagebutton">Click here</button><ng-container *ngIf="logout"><span style="color:orangered;"> ...Logging out...</span></ng-container></h6>
     <br />

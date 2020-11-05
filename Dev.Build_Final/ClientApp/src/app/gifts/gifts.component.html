@@ -22,9 +22,9 @@
     <br />
 
     <form *ngIf="id != '0'">
-      <input type="text" name="newGift" placeholder="New Gift" [(ngModel)]="newGiftItem.description" /><ng-container *ngIf="error">Invalid Format. Try Again.</ng-container>
+      <input class="inputbox" type="text" name="newGift" placeholder="New Gift" [(ngModel)]="newGiftItem.description" /><ng-container *ngIf="error">Invalid Format. Try Again.</ng-container>
       <br />
-      <button (click)="newItem()">Add Gift</button>
+      <button class="inputbutton" (click)="newItem()">Add Gift</button>
     </form>
   </ng-container>
 </div>
