@@ -4,7 +4,7 @@
     <div *ngFor="let p of peopleList">
       <ng-container *ngIf="p.loginid === currentID">
         <nav>
-          <a [routerLink]="['/book', {outlets: {'people': ['people'], 'gifts': [p.id]}}]" (click)="showList(p.id)">{{p.firstname}} {{p.lastname}}</a>
+          <a style="font-size:20px" [routerLink]="['/book', {outlets: {'people': ['people'], 'gifts': [p.id]}}]" (click)="showList(p.id)">{{p.firstname}} {{p.lastname}}</a>
           <button class="removebutton" (click)="removePerson(p)">X</button>
         </nav>
       </ng-container>

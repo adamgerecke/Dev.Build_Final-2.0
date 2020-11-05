@@ -1,14 +1,27 @@
-<button class="pagebutton" (click)="setUser('new')">New User</button>&nbsp;<button class="pagebutton" (click)="setUser('existing')">Existing User</button>
-<br />
-
+<div class="container">
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <button class="loginbutton" style="float:left; margin-left:350px; font-size:32px" (click)="setUser('new')">New User</button>&nbsp;<button class="loginbutton" style="float:right; margin-right:350px; font-size:32px" (click)="setUser('existing')">Existing User</button>
+</div>
 <form *ngIf="usertype == 'new'">
-  <input type="text" name="login" placeholder="New User" [(ngModel)]="username" /><ng-container *ngIf="error == 'invalidFormat'"><span style="color:red">Invalid Format. Try Again.</span></ng-container><ng-container *ngIf="error == 'userTaken'"><span style="color:red">Username taken</span></ng-container>
-  <br />
-  <button class="pagebutton" (click)="addNewUser()">Add User</button><ng-container *ngIf="success"><span style="color:forestgreen;">Success! Creating user and logging you in...</span></ng-container>
+
+  <input style="margin-left: 380px; width:350px; text-align:center;" type="text" name="login" placeholder="New User" [(ngModel)]="username" /><ng-container *ngIf="error == 'invalidFormat'"><span style="color:red">Invalid Format. Try Again.</span></ng-container><ng-container *ngIf="error == 'userTaken'"><span style="color:red">Username taken</span></ng-container>
+
+  <button style="margin-left: 380px; width:350px; text-align:center;" class="pagebutton" (click)="addNewUser()">Add User</button><ng-container *ngIf="success"><span style="color:forestgreen;">Success! Creating user and logging you in...</span></ng-container>
 </form>
 
 <form *ngIf="usertype == 'existing'">
-  <input type="text" name="login" placeholder="Username" [(ngModel)]="username" /><ng-container *ngIf="error == 'notFound'"><span style="color:red">Unable to find username. Need to create a new one?</span></ng-container>
-  <br />
-  <button class="pagebutton" (click)="loginUser()">Login</button><ng-container *ngIf="success"><span style="color:forestgreen;">Success! Logging you in...</span></ng-container>
+
+  <input style="margin-left: 380px; width:350px; text-align:center;" type="text" name="login" placeholder="Username" [(ngModel)]="username" /><ng-container *ngIf="error == 'notFound'"><span style="color:red">Unable to find username. Need to create a new one?</span></ng-container>
+
+  <button class="pagebutton" style="margin-left: 380px; width:350px; text-align:center;" (click)="loginUser()">Login</button><ng-container *ngIf="success"><span style="color:forestgreen;">Success! Logging you in...</span></ng-container>
 </form>
