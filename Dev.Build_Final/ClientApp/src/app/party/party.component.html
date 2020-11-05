@@ -1,8 +1,7 @@
 
 <div class="letter">
   <ng-container>
-    <h1 style="text-align:center">Holiday Party To-Do List</h1>
-    <h1 style="text-align:center">~~~~~~~~~~~~~~~~~~~~~</h1><br />
+    <h1 style="text-align:center;">Holiday Party To-Do List</h1><br />
     <ng-container *ngFor="let item of partyList, index as i">
       <ng-container *ngIf="item.loginid === currentID">
         <div *ngIf="item.done =='1'; then Checked else unChecked">

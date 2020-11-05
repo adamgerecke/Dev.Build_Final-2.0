@@ -1,4 +1,4 @@
-﻿import { Component } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
     selector: 'app-music-player',
@@ -11,4 +11,5 @@ export class MusicPlayerComponent {
     constructor() {
 
     }
+
 }

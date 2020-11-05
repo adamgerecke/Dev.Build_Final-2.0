@@ -101,8 +101,8 @@
 <header>
   <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-white bg-transparent mb-3">
     <div class="container">
-      <img src="../assets/treeTransparent.png" style="width: 75px; height: 75px;   position:absolute; left:340px;" />
-      <a style="color:ghostwhite; font-family:'Kunstler Script'; font-size:48px; text-shadow: 1px 1px #383838" class="navbar-brand" [routerLink]="['/']">Santa's Little Helper</a>
+      <img src="../assets/treeTransparent.png" style="width: 75px; height: 75px;   float:left;" />
+      <a style="color:ghostwhite; font-family:'Kunstler Script'; font-size:48px; text-shadow: 1px 1px #383838; float:left;" class="navbar-brand" [routerLink]="['/']">Santa's Little Helper</a>
       <app-countdown></app-countdown>
       <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse"
            [ngClass]="{ show: isExpanded }">
@@ -120,6 +120,9 @@
             <a class="nav-link text-light" [routerLink]="['/party']">Party</a>
           </li>
         </ul>
+        <div style="float:left">
+          <app-music-player></app-music-player>
+        </div>
       </div>
     </div>
   </nav>
