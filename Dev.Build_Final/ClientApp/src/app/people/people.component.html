@@ -12,9 +12,9 @@
 
     <br />
     <form>
-      <input type="text" name="newPerson" placeholder="First Name" [(ngModel)]="newPerson.firstname" /><ng-container *ngIf="firstNameError">Invalid Format. Try Again.</ng-container><br />
-      <input type="text" name="newPerson" placeholder="Last Name" [(ngModel)]="newPerson.lastname" /><ng-container *ngIf="lastNameError">Invalid Format. Try Again.</ng-container><br />
-      <button (click)="addPerson()">Add Person</button>
+      <input class="inputbox" type="text" name="newPerson" placeholder="First Name" [(ngModel)]="newPerson.firstname" /><ng-container *ngIf="firstNameError">Invalid Format. Try Again.</ng-container><br />
+      <input class="inputbox" type="text" name="newPerson" placeholder="Last Name" [(ngModel)]="newPerson.lastname" /><ng-container *ngIf="lastNameError">Invalid Format. Try Again.</ng-container><br />
+      <button class="inputbutton" (click)="addPerson()">Add Person</button>
     </form>
   </ng-container>
 </div>
