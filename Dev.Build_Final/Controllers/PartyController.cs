@@ -34,7 +34,7 @@ namespace Dev.Build_Final.Controllers
         [HttpPost("add")]
         public void addTask(party newEvent)
         {
-            //party myTask = new party() { description = "TEST DESCRIPTION", done = false };
+            
 
             DAL.AddTask(newEvent);
         }

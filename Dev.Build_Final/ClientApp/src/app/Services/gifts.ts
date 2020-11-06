@@ -9,22 +9,16 @@ import { people } from "../interfaces/Ipeople";
 export class giftService {
   constructor(private http: HttpClient) { }
 
-  //userID = 'The_User';
-
-
+  
   giftUrl = '/api/gift';
 
-  //getAllGifts(id: number) {
-  //  return this.http.get<gift[]>(this.giftUrl + `/all/${id}`);
-  //}
+
 
   getGifts() {
     return this.http.get<gift[]>(this.giftUrl);
   }
 
-  //getGiftsFromUser(id: number) {
-  //  return this.http.get<gift[]>(this.giftUrl + `/${id}`);
-  //}
+
 
   getUserName(id: number) {
     return this.http.get<people>(this.giftUrl + `/name/${id}`)

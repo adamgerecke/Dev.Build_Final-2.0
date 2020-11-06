@@ -35,7 +35,7 @@ namespace Dev.Build_Final.Controllers
         [HttpPost("add")]
         public void addDecoration(decoration newEvent)
         {
-            //party myTask = new party() { description = "TEST DESCRIPTION", done = false };
+           
 
             DAL.AddDecoration(newEvent);
         }

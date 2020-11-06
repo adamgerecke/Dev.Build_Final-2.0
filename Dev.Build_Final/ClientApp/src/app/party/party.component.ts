@@ -68,7 +68,6 @@ export class PartyComponent implements OnInit{
     if (/.*\S.*/.test(this.newPartyItem.description)) {
       this.party.newPartyItem(this.newPartyItem);
       this.newPartyItem.description = '';
-      //this.newDecorationItem.userid = null;
       this.error = false;
     }
     else {

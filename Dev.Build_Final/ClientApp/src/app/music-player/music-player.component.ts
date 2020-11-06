@@ -11,5 +11,12 @@ export class MusicPlayerComponent {
     constructor() {
 
     }
+  showMe = true;
 
+
+
+  displayMe = function () {
+    this.showMe = !this.showMe;
+    console.log(this.showMe);
+  }
 }

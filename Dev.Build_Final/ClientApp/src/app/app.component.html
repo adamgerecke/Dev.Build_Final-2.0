@@ -16,10 +16,6 @@
     <a style="color:ghostwhite; font-size:24px; font-family:Arial, Helvetica, sans-serif; font-weight:100">Welcome, {{loggedInUser?.login}}</a><span><app-completed></app-completed></span><br/>
     <a style="color:ghostwhite; font-family:Arial, Helvetica, sans-serif; font-size:small;">Not you? <button (click)="clearCookie()" class="pagebutton">Click here</button><ng-container *ngIf="logout"><span style="color:orangered;"> ...Logging out...</span></ng-container></a>
     <br />
-    <!--<button (click)="sendInfo()">Log</button>-->
     <router-outlet></router-outlet>
   </div>
-  <!--<div align="center" style="padding-top: 50px">
-    <app-music-player></app-music-player>
-  </div>-->
 </body>

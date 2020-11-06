@@ -18,7 +18,6 @@ export class PeopleComponent implements OnInit {
   @Input() userID: number
 
   peopleList: people
-  //person: people
   peep: people
   currentID: number
   nowID: number
@@ -54,22 +53,17 @@ export class PeopleComponent implements OnInit {
   addPerson() {
     if (!/^[A-z][\sA-z]*$/.test(this.newPerson.firstname) || !/^[A-z][\sA-z]*$/.test(this.newPerson.lastname)) {
       if (!/^[A-z][\sA-z]*$/.test(this.newPerson.firstname)) {
-        //console.log('If-firstname = ' + /^[A-z][\sA-z]*$/.test(this.newPerson.firstname));
         this.firstNameError = true;
       }
       else {
-        //console.log('Else-firstname = ' + /^[A-z][\sA-z]*$/.test(this.newPerson.firstname));
         this.firstNameError = false;
       }
       if (!/^[A-z][\sA-z]*$/.test(this.newPerson.lastname)) {
-        //console.log('If-lastname = ' + /^[A-z][\sA-z]*$/.test(this.newPerson.lastname));
         this.lastNameError = true;
       }
       else {
-        //console.log('Else-lastname = ' + /^[A-z][\sA-z]*$/.test(this.newPerson.lastname));
         this.lastNameError = false;
       }
-      //console.log('F-Error = ' + this.firstNameError + ' L-Error = ' + this.lastNameError)
     }
     else {
       this.people.AddPerson(this.newPerson).subscribe(

@@ -32,10 +32,9 @@ export class GiftsComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    //console.log(this.giftList);
+   
     this.route.params.subscribe((params: { id: number }) => {
       this.id = params.id;
-      //console.log('id = ' +this.id);
       if (this.id != 0) {
         this.gifts.getUserName(this.id).subscribe(
           (data: people) =>
@@ -48,7 +47,6 @@ export class GiftsComponent implements OnInit {
     this.currentID = Number(this.cookie.get('id'));
     this.newGiftItem.loginid = this.currentID;
     setTimeout(() => { this.complete.giftComplete = this.calculateComplete() }, 100);
-    //console.log(this.giftList);
   }
 
   calculateComplete(): number {
@@ -74,7 +72,6 @@ export class GiftsComponent implements OnInit {
   }
 
   displayGift(item: gift): boolean {
-    //console.log(item.loginid + ' = ' + this.currentID + ' || ' + item.userid + ' = ' + this.id);
     if (item.loginid == this.currentID && item.userid == this.id) {
       return true;
     }

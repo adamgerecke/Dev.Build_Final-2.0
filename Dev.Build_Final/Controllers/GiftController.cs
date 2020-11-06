@@ -20,17 +20,6 @@ namespace Dev.Build_Final.Controllers
             this.DAL = DAL;
         }
 
-        //[HttpGet("{userID}")]
-        //public IEnumerable<gift> GetGifts(int userID)
-        //{
-        //    return DAL.GetPersonGifts(userID);
-        //}
-
-        //[HttpGet("all/{userID}")]
-        //public IEnumerable<gift> GetAllGifts(int userID) //used for completed calculations
-        //{
-        //    return DAL.GetAllGifts(userID);
-        //}
 
         [HttpGet]
         public IEnumerable<gift> GetAllGifts()
@@ -50,8 +39,7 @@ namespace Dev.Build_Final.Controllers
         [HttpPost("add")]
         public void AddGif(gift newGift)
         {
-            //party myTask = new party() { description = "TEST DESCRIPTION", done = false };
-
+            
             DAL.AddGift(newGift);
         }
 
